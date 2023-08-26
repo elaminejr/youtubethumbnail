@@ -35,25 +35,13 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          {/* Example text and HTML structure */}
-          <div class="ftco-section center">
-            <h2 class="title">The Best Youtube Downloader</h2>
-            <div class="txt-box">
-              <p class="mw70">YT1s YouTube Downloader helps you save Youtube videos to your device. You can choose from a variety of formats and qualities to download.</p>
-              <p class="mw70">YT1s.com is a utility website for downloading user-uploaded videos from YouTube. First published in 2020, it has a vast, diverse, worldwide community of users. It is used by journalists and human rights organizations to save eyewitness videos, by educators to save videos for classroom use, by YouTubers to save backup copies of their own uploaded videos, and by users worldwide to watch videos on hardware that can’t run a standard web browser, or to watch videos in their full resolution over slow or unreliable Internet connections. YT1s.com stands in place of a Web browser and performs a similar function with respect to user-uploaded videos. Importantly, YT1s.com does not decrypt video streams that are encrypted with commercial DRM technologies, that are used by subscription video sites.</p>
-            </div>
-            <ul class="listitem items-more">
-              <li>
-                <div class="post-image bg1">
-                  <img src="https://yt1s.com/statics/image/clock.svg" alt="Fast and easy to use" />
-                </div>
-                <div class="post-content">
-                  <h3>Fast and easy to use</h3>
-                  <p>Using our Youtube downloader is the fast and easy way to download and save any YouTube video to MP3 or MP4. Simply copy YouTube URL, paste it on the search box and click on "Convert" button. No register accounts needed. </p>
-                </div>
-              </li>
-              {/* Add other list items here */}
-            </ul>
+          {/* Added text */}
+          <div>
+            <p>YouTube, the second most popular global website, is widely recognized as the top video hosting platform. However, there are limitations to directly downloading videos from YouTube.</p>
+
+            <p>SaveFrom Helper offers a free and unlimited solution for effortlessly downloading YouTube videos in MP4 format at exceptional speeds. Depending on the original quality, you can choose from a range of resolutions including SQ, HD, Full HD, 2k, or 4k. Additionally, the Helper tool simplifies converting YouTube videos to MP3 format.</p>
+
+            <p>At SaveFrom, we are confident that our YouTube downloader provides one of the most user-friendly solutions available today. Give our video downloader a try and enjoy seamless downloading of any YouTube video or audio to your PC or mobile device.</p>
           </div>
         </body>
       </Html>
