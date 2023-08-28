@@ -50,7 +50,7 @@ class MyDocument extends Document {
                 <h2>How to use this YouTube thumbnail downloader website?</h2>
                 <p>I have shared some screenshots in which I have guided you on how you can use this YouTube downloader website. It's quite easy. The first step is to copy any YouTube link whose thumbnail you want. Now paste that URL in the input box, and the moment you paste that link, it will automatically generate different sizes of thumbnails for you. Click on the thumbnail download button, and it will be automatically downloaded to your system.</p>
                 <p>If you are using an Android phone, you have to save those images, and if you are using an iPhone, then I don't know how you can do it?</p>
-                <!-- Continue adding the rest of the content -->
+                {/* Continue adding the rest of the content */}
               </div>
             </div>
           </div>
