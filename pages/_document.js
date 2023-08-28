@@ -32,11 +32,14 @@ class MyDocument extends Document {
           <link rel="manifest" href="/favicon/site.webmanifest" />
         </Head>
         <body>
-          <Main />
-          <NextScript />
-
           {/* Added text */}
           <div>
+            <p>YouTube, the second most popular global website, is widely recognized as the top video hosting platform. However, there are limitations to directly downloading videos from YouTube.</p>
+
+            <p>SaveFrom Helper offers a free and unlimited solution for effortlessly downloading YouTube videos in MP4 format at exceptional speeds. Depending on the original quality, you can choose from a range of resolutions including SQ, HD, Full HD, 2k, or 4k. Additionally, the Helper tool simplifies converting YouTube videos to MP3 format.</p>
+
+            <p>At SaveFrom, we are confident that our YouTube downloader provides one of the most user-friendly solutions available today. Give our video downloader a try and enjoy seamless downloading of any YouTube video or audio to your PC or mobile device.</p>
+
             <div className="widget-content">
               <h1 className="entry-title centered-text">YouTube Thumbnail Downloader</h1>
               <h1 className="entry-title centered-text">&#9655; Save YT Video Thumbnails</h1>
@@ -51,6 +54,8 @@ class MyDocument extends Document {
               </div>
             </div>
           </div>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );
