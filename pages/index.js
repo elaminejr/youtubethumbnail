@@ -40,34 +40,37 @@ const Index = () => {
           Youtube Thumbnail Downloader
         </h1>
         <p
-          style={{
-            textAlign: "center",
-            margin: "0 auto",
-            maxWidth: "500px",
-            paddingTop: "30px",
-            paddingBottom: "30px",
-            fontSize: "16px",
-            marginTop: "50px",
-          }}
-        >
-          Download youtube and vimeo thumbnail images of all quality for free. This application lets you download thumbnails of all quality. Just paste the URL of the thumbnail video in the below input and click Get Thumbnail Image.
-        </p>
+  style={{
+    textAlign: "center",
+    margin: "0 auto",
+    maxWidth: "500px",
+    padding: "30px 0", // Add padding to control vertical spacing
+    fontSize: "16px",
+    marginTop: "50px",
+    lineHeight: "1.4", // Adjust the line height to control line spacing
+  }}
+>
+  Download high-quality YouTube thumbnail images at no cost.<br></br> Our application enables you to access thumbnails in various resolutions. Simply insert the video's URL<br></br> in the input field below and click <br></br>Get Thumbnail Image.
+</p>
+
       </header>
       <div className="text-center">
-        <input
-          type="text"
-          className="w-full md:w-1/2 px-4 py-2 border rounded"
-          placeholder="Enter YouTube URL"
-          value={videoURL}
-          onChange={(e) => setVideoURL(e.target.value)}
-        />
-        <button
-          className="btn-blue mt-2"
-          onClick={() => getYouTubeThumbnail(videoURL)}
-        >
-          Download Thumbnails
-        </button>
-      </div>
+    <div className="input-container"> {/* New container */}
+      <input
+        type="text"
+        className="custom-input"
+        placeholder="Enter YouTube URL"
+        value={videoURL}
+        onChange={(e) => setVideoURL(e.target.value)}
+      />
+      <button
+        className="btn-blue mt-2"
+        onClick={() => getYouTubeThumbnail(videoURL)}
+      >
+        Download Thumbnails
+      </button>
+    </div>
+  </div>
       {thumbnailOptions.length > 0 && (
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Thumbnail Options</h2>
