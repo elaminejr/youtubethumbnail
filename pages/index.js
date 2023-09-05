@@ -39,8 +39,18 @@ const Index = () => {
         <h1 className="text-3xl font-bold mb-2">
           Youtube Thumbnail Downloader
         </h1>
-        <p className="text-gray-600">
-          Download high-quality thumbnails from YouTube videos.
+        <p
+          style={{
+            textAlign: "center",
+            margin: "0 auto",
+            maxWidth: "500px",
+            paddingTop: "30px",
+            paddingBottom: "30px",
+            fontSize: "16px",
+            marginTop: "50px",
+          }}
+        >
+          Download youtube and vimeo thumbnail images of all quality for free. This application lets you download thumbnails of all quality. Just paste the URL of the thumbnail video in the below input and click Get Thumbnail Image.
         </p>
       </header>
       <div className="text-center">
@@ -76,6 +86,29 @@ const Index = () => {
           </div>
         </div>
       )}
+      {/* SEO-optimized paragraphs at the bottom of the home page */}
+      <div className="mt-8 paragraph-container">
+  <h2 className="text-xl font-semibold mb-4">Why Choose Our Thumbnail Downloader?</h2>
+  <p className="paragraph">
+    Our YouTube Thumbnail Downloader offers a hassle-free way to access eye-catching thumbnails for your video content needs. We prioritize user convenience and quality, providing a seamless experience for content creators and enthusiasts.
+  </p>
+  <h2 className="text-xl font-semibold mb-4">Benefits of Using High-Quality Thumbnails</h2>
+  <p className="paragraph">
+    High-quality thumbnails can significantly impact your video's visibility and viewer engagement. They serve as the first impression of your content, enticing viewers to click and explore. Utilizing vibrant and appealing thumbnails can help your videos stand out in search results and recommendations.
+  </p>
+  <h2 className="text-xl font-semibold mb-4">Thumbnail Customization Options</h2>
+  <p className="paragraph">
+    Beyond selecting the resolution, you can further customize your thumbnails to match your branding or video content. Tools like Photoshop can be used to add unique effects, text overlays, or branding elements, making your thumbnails more recognizable and compelling.
+  </p>
+  <h2 className="text-xl font-semibold mb-4">Legal Considerations for Thumbnail Usage</h2>
+  <p className="paragraph">
+    While downloading YouTube thumbnails is generally permissible, always respect copyright laws and intellectual property rights. Seek permission from content creators if you plan to use thumbnails for commercial purposes or on platforms with strict copyright policies.
+  </p>
+  <h2 className="text-xl font-semibold mb-4">Enhance Your Video SEO Strategy</h2>
+  <p className="paragraph">
+    Thumbnails play a crucial role in video search engine optimization (SEO). Crafting unique and visually appealing thumbnails can improve click-through rates and boost your video's discoverability on search engines like Yandex. Make sure to optimize your video titles and descriptions for better results.
+  </p>
+      </div>
     </div>
   );
 };
