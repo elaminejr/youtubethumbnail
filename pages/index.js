@@ -75,17 +75,37 @@ const Index = () => {
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Thumbnail Options</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {thumbnailOptions.map((option, index) => (
-              <div key={index} className="thumbnail-option">
-                <img src={option.url} alt={`Thumbnail ${index + 1}`} />
-                <button
-                  className="btn-blue mt-2"
-                  onClick={() => copy(option.url)}
-                >
-                  Copy Image URL
-                </button>
-              </div>
-            ))}
+          {thumbnailOptions.map((option, index) => (
+  <div key={index} className="thumbnail-option">
+    <div className="thumbnail-container">
+      <img src={option.url} alt={`Thumbnail ${index + 1}`} />
+      <div className="button-container">
+        <button
+          className="btn-blue mt-2"
+          onClick={() => {
+            // Open the thumbnail in a new page
+            window.open(option.url, '_blank');
+          }}
+        >
+          Open Thumbnail
+        </button>
+        <button
+          className="btn-blue mt-2"
+          onClick={() => {
+            // Trigger the download using an anchor element
+            const anchor = document.createElement('a');
+            anchor.href = option.url;
+            anchor.download = `thumbnail_${index + 1}.jpg`;
+            anchor.click();
+          }}
+        >
+          Download Thumbnail
+        </button>
+      </div>
+    </div>
+  </div>
+))}
+
           </div>
         </div>
       )}
