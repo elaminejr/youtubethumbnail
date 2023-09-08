@@ -1,5 +1,4 @@
 import { useState } from "react";
-import copy from "copy-to-clipboard";
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
@@ -36,82 +35,76 @@ const Index = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2">
-          Youtube Thumbnail Downloader
-        </h1>
+        <h1 className="text-3xl font-bold mb-2">◄ Youtube Thumbnail Downloader ► </h1>
         <p
-  style={{
-    textAlign: "center",
-    margin: "0 auto",
-    maxWidth: "500px",
-    padding: "30px 0", // Add padding to control vertical spacing
-    fontSize: "16px",
-    marginTop: "50px",
-    lineHeight: "1.4", // Adjust the line height to control line spacing
-  }}
->
-  Download high-quality YouTube thumbnail images at no cost.<br></br> Our application enables you to access thumbnails in various resolutions. Simply insert the video's URL<br></br> in the input field below and click <br></br>Get Thumbnail Image.
-</p>
+          style={{
+            textAlign: "center",
+            margin: "0 auto",
+            maxWidth: "500px",
+            padding: "30px 0",
+            fontSize: "16px",
+            marginTop: "50px",
+            lineHeight: "1.4",
+          }}
+        >
+          Download high-quality YouTube thumbnail images at no cost.<br></br> Our application enables you to access thumbnails in various resolutions. Simply insert the video's URL<br></br> in the input field below and click <br></br> ⋘ down𝑙𝑜𝑎𝑑𝑖𝑛𝑔... ⋙
 
+        </p>
       </header>
       <div className="text-center">
-    <div className="input-container"> {/* New container */}
-      <input
-        type="text"
-        className="custom-input"
-        placeholder="Enter YouTube URL"
-        value={videoURL}
-        onChange={(e) => setVideoURL(e.target.value)}
-      />
-      <button
-        className="btn-blue mt-2"
-        onClick={() => getYouTubeThumbnail(videoURL)}
-      >
-        Download Thumbnails
-      </button>
-    </div>
-  </div>
+        <div className="input-container">
+          <input
+            type="text"
+            className="custom-input"
+            placeholder="Enter YouTube URL"
+            value={videoURL}
+            onChange={(e) => setVideoURL(e.target.value)}
+          />
+          <button
+            className="btn-blue mt-2"
+            onClick={() => getYouTubeThumbnail(videoURL)}
+          >
+            Download Thumbnails
+          </button>
+        </div>
+      </div>
       {thumbnailOptions.length > 0 && (
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Thumbnail Options</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {thumbnailOptions.map((option, index) => (
-  <div key={index} className="thumbnail-option">
-    <div className="thumbnail-container">
-      <img src={option.url} alt={`Thumbnail ${index + 1}`} />
-      <div className="button-container">
-        <button
-          className="btn-blue mt-2"
-          onClick={() => {
-            // Open the thumbnail in a new page
-            window.open(option.url, '_blank');
-          }}
-        >
-          Open Thumbnail
-        </button>
-        <button
-          className="btn-blue mt-2"
-          onClick={() => {
-            // Trigger the download using an anchor element
-            const anchor = document.createElement('a');
-            anchor.href = option.url;
-            anchor.download = `thumbnail_${index + 1}.jpg`;
-            anchor.click();
-          }}
-        >
-          Download Thumbnail
-        </button>
-      </div>
-    </div>
-  </div>
-))}
-
+            {thumbnailOptions.map((option, index) => (
+              <div key={index} className="thumbnail-option">
+                <img src={option.url} alt={`Thumbnail ${index + 1}`} />
+                <div className="button-container">
+                  <button
+                    className="btn-blue mt-2"
+                    onClick={() => {
+                      // Open the thumbnail in a new page
+                      window.open(option.url, '_blank');
+                    }}
+                  >
+                    Open Thumbnail
+                  </button>
+                  <button
+                    className="btn-blue mt-2"
+                    onClick={() => {
+                      // Trigger the download using an anchor element
+                      const anchor = document.createElement('a');
+                      anchor.href = option.url;
+                      anchor.download = `thumbnail_${index + 1}.jpg`;
+                      anchor.click();
+                    }}
+                  >
+                    Download Thumbnail
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       )}
-      {/* SEO-optimized paragraphs at the bottom of the home page */}
       <div className="mt-8 paragraph-container">
-  <h2 className="text-xl font-semibold mb-4">Why Choose Our Thumbnail Downloader?</h2>
+  <h2 className="text-xl font-semibold mb-4">◄Why Choose Our  Youtube Thumbnail Downloader ►  ?</h2>
   <p className="paragraph">
     Our YouTube Thumbnail Downloader offers a hassle-free way to access eye-catching thumbnails for your video content needs. We prioritize user convenience and quality, providing a seamless experience for content creators and enthusiasts.
   </p>
@@ -131,6 +124,17 @@ const Index = () => {
   <p className="paragraph">
     Thumbnails play a crucial role in video search engine optimization (SEO). Crafting unique and visually appealing thumbnails can improve click-through rates and boost your video's discoverability on search engines like Yandex. Make sure to optimize your video titles and descriptions for better results.
   </p>
+</div>
+      <div className="mt-8">
+        <a href="/privacy-policy" className="btn-blue">
+          Privacy & Policy
+        </a>
+        <a href="/about-us" className="btn-blue">
+          About Us
+        </a>
+        <a href="/contact-us" className="btn-blue">
+          Contact Us
+        </a>
       </div>
     </div>
   );
