@@ -34,19 +34,19 @@ const Index = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-  <header className="text-center mb-8">
-    <h1 className="text-3xl font-bold mb-2">Youtube Thumbnail Downloader</h1>
-    <p
-      style={{
-        textAlign: "center",
-        margin: "0 auto",
-        maxWidth: "100%", // Adjusted to 100% for responsiveness
-        padding: "30px 0",
-        fontSize: "16px",
-        marginTop: "50px",
-        lineHeight: "1.4",
-      }}
-    >
+      <header className="text-center mb-8">
+        <h1 className="text-3xl font-bold mb-2">Youtube Thumbnail Downloader</h1>
+        <p
+          style={{
+            textAlign: "center",
+            margin: "0 auto",
+            maxWidth: "500px",
+            padding: "30px 0",
+            fontSize: "16px",
+            marginTop: "50px",
+            lineHeight: "1.4",
+          }}
+           >
           Grab YouTube video thumbnails in multiple sizes and quality options. Supports HD, HQ, 1080p, 4K formats without any sign up.
         </p>      
       </header>
