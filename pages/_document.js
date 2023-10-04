@@ -9,8 +9,8 @@ class MyDocument extends Document {
           <script
             data-ad-client="pub-6225203432253385"
             async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          ></script>
+            rc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6225203432253385"
+     crossorigin="anonymous"></script>
           {/* Other head elements */}
           <link
             rel="apple-touch-icon"

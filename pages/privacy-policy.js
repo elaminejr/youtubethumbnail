@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-
+<head>
+<meta name="google-adsense-account" content="ca-pub-6225203432253385"></meta>
+</head>
 const PrivacyPolicy = () => {
   // Define a container style for centering content
   const containerStyle = {
@@ -19,6 +21,7 @@ const PrivacyPolicy = () => {
     lineHeight: "1.5",
     textAlign: "left",
   };
+
 <div className="post" style={containerStyle}>
       {/* ... (Your existing content) */}
 

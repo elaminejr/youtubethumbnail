@@ -50,6 +50,7 @@ const Index = () => {
           Grab YouTube video thumbnails in multiple sizes and quality options. Supports HD, HQ, 1080p, 4K formats without any sign up.
         </p>      
       </header>
+      <meta name="google-adsense-account" content="ca-pub-6225203432253385"></meta>
       <div className="text-center">
         <div className="input-container">
           <input

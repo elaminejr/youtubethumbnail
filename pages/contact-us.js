@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
+<meta name="google-adsense-account" content="ca-pub-6225203432253385"></meta>
 // Define styled components
 const Container = styled.div`
   max-width: 800px;
