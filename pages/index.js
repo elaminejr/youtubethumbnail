@@ -37,6 +37,7 @@ const Index = () => {
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">Youtube Thumbnail Downloader</h1>
         <p
+        
           style={{
             textAlign: "center",
             margin: "0 auto",
@@ -50,7 +51,22 @@ const Index = () => {
           Grab YouTube video thumbnails in multiple sizes and quality options. Supports HD, HQ, 1080p, 4K formats without any sign up.
         </p>      
       </header>
-      <meta name="google-adsense-account" content="ca-pub-6225203432253385"></meta>
+      {/* Ad - Left */}
+      <div style={{ position: 'fixed', left: 0, top: '50%', transform: 'translateY(-50%)' }}>
+        <ins className="adsbygoogle"
+          style={{ display: 'inline-block', width: '160px', height: '600px' }}
+          data-ad-client="ca-pub-6225203432253385"
+          data-ad-slot="4909364750"></ins>
+      </div>
+
+      {/* Ad - Right */}
+      <div style={{ position: 'fixed', right: 0, top: '50%', transform: 'translateY(-50%)' }}>
+        <ins className="adsbygoogle"
+          style={{ display: 'inline-block', width: '160px', height: '600px' }}
+          data-ad-client="ca-pub-6225203432253385"
+          data-ad-slot="4909364750"></ins>
+      </div>
+
       <div className="text-center">
         <div className="input-container">
           <input
