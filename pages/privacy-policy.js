@@ -157,6 +157,9 @@ Youtube thumbnail grabber does not knowingly collect any Personal Identifiable I
         <a href="/contact-us" className="btn-blue">
           Contact Us
         </a>
+        <a href="/InfoAndCookies" className="btn-blue">
+        InfoAndCookies
+        </a>
       </div>
     </div>
   );

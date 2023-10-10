@@ -1,4 +1,6 @@
 import { useState } from "react";
+import CookieConsent from "react-cookie-consent";
+
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
@@ -52,6 +54,17 @@ const Index = () => {
           Download video youtube thumbnail in multiple sizes and quality options. Supports HD, HQ, 1080p, 4K formats without any sign up.
         </p>      
       </header>
+      <CookieConsent
+  location="bottom"
+  buttonText="Accept"
+  cookieName="myAwesomeCookieName2"
+  style={{ background: "#2B373B" }}
+  buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+  expires={150}
+>
+We use cookies to enhance your user experience. By using our website, you agree to our use of cookies. Read more about how we use cookies{" "}
+  <span style={{ fontSize: "10px" }}></span>
+</CookieConsent>
       {/* Ad - Left */}
       <div style={{ position: 'fixed', left: 0, top: '50%', transform: 'translateY(-50%)' }}>
         <ins className="adsbygoogle"
@@ -239,6 +252,9 @@ const Index = () => {
         </a>
         <a href="/contact-us" className="btn-blue">
           Contact Us
+        </a>
+        <a href="/InfoAndCookies" className="btn-blue">
+        InfoAndCookies
         </a>
       </div>
     </div>

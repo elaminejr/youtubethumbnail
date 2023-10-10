@@ -41,6 +41,9 @@ const AboutUs = () => {
         <a href="/contact-us" className="btn-blue">
           Contact Us
         </a>
+        <a href="/InfoAndCookies" className="btn-blue">
+        InfoAndCookies
+        </a>
       </div>
     </div>
   );
