@@ -1,3 +1,4 @@
+
 /* Center-align paragraphs and add formatting */
 .paragraph-container {
   display: flex;
@@ -8,6 +9,22 @@
   text-align: center; /* Center-align the text */
   padding: 0 20px; /* Add some horizontal padding for readability */
 }
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-card {
+  width: 45%; /* Adjust the width as needed */
+  text-align: center; /* Center the title */
+}
+
+.image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
 
 .paragraph {
   font-size: 1rem;

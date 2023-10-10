@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 <head>
 <meta name="google-adsense-account" content="ca-pub-6225203432253385"></meta>
 </head>
 const PrivacyPolicy = () => {
-  // Define a container style for centering content
+  // 
   const containerStyle = {
     maxWidth: "800px", // Set maximum width
     margin: "0 auto", // Center the container horizontally
     padding: "20px",
   };
-  // Define styles for other elements as needed
+  //
   const headingStyle = {
     fontSize: "24px",
     color: "#333",
@@ -21,14 +21,15 @@ const PrivacyPolicy = () => {
     lineHeight: "1.5",
     textAlign: "left",
   };
+  const buttonContainerStyle = {
+    marginTop: '2rem',
+    textAlign: 'center',
+  };
 
 <div className="post" style={containerStyle}>
-      {/* ... (Your existing content) */}
-
-      {/* Add a button or link to return to the home page */}
-      <Link to="/">Go Back to Home</Link>
     </div>
   return (
+    
     
     <div className="post" style={containerStyle}>
       <div className="post-info">
@@ -40,11 +41,11 @@ const PrivacyPolicy = () => {
       <div className="post-line"></div>
 
       <h1 id="privacy-policy-for-downloadvideoyoutubethumbnail" style={headingStyle}>
-        Privacy Policy for download video youtube thumbnail
+        Privacy Policy for download video youtube thumbnair
       </h1>
 
       <p style={paragraphStyle}>
-        At download video youtube thumbnail, accessible from{" "}
+        At download video youtube thumbnair, accessible from{" "}
         <a href="https://downloadvideoyoutubethumbnail.com/">https://downloadvideoyoutubethumbnail.com/</a>,
         one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of
         information that is collected and recorded by download video youtube thumbnai and how we use it.
@@ -146,6 +147,17 @@ If you make a request, we have one month to respond to you. If you would like to
 
 Youtube thumbnail grabber does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
       </p>
+      <div className="mt-8" style={buttonContainerStyle}>
+        <a href="/privacy-policy" className="btn-blue">
+          Privacy & Policy
+        </a>
+        <a href="/about-us" className="btn-blue">
+          About Us
+        </a>
+        <a href="/contact-us" className="btn-blue">
+          Contact Us
+        </a>
+      </div>
     </div>
   );
 };

@@ -34,8 +34,9 @@ const Index = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* ... rest of your component ... */}
       <header className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2">Youtube Thumbnail Downloader</h1>
+        <h1 className="text-3xl font-bold mb-2">Download Video Youtube Thumbnail</h1>
         <p
         
           style={{
@@ -48,7 +49,7 @@ const Index = () => {
             lineHeight: "1.4",
           }}
            >
-          Grab YouTube video thumbnails in multiple sizes and quality options. Supports HD, HQ, 1080p, 4K formats without any sign up.
+          Download video youtube thumbnail in multiple sizes and quality options. Supports HD, HQ, 1080p, 4K formats without any sign up.
         </p>      
       </header>
       {/* Ad - Left */}
@@ -120,7 +121,22 @@ const Index = () => {
         </div>
       )}
       <div className="mt-8 paragraph-container">
-  <h2 className="text-xl font-semibold mb-4">1. About Our YouTube Thumbnail Downloader:</h2>
+      <h2 className="text-xl font-semibold mb-4">Full HD </h2>
+      <img
+    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX1BlEbbhevxrZUZkhLOcypCnaRmBZaiMYsEtPxGv_gWVuHEjJRpih3S4mHRzw-a6GALYh1DueVwpDjaL_BrCGHEhS9rBqkCBpG1YKFpHfIBiPl7zDwyycuoqllrJESGNzCIe_T06VbJMipp7D4pQk5erv4Jsq4qcySHHErCufy1AJZZIYZZaGaYvKJUp0/s1600/Untitled-1.png"
+    alt="Image 1"
+    width="1080"
+    height="607"
+  />
+  <div className="image-card">
+        <h2 className="text-xl font-semibold mb-4">Medium</h2>
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX1BlEbbhevxrZUZkhLOcypCnaRmBZaiMYsEtPxGv_gWVuHEjJRpih3S4mHRzw-a6GALYh1DueVwpDjaL_BrCGHEhS9rBqkCBpG1YKFpHfIBiPl7zDwyycuoqllrJESGNzCIe_T06VbJMipp7D4pQk5erv4Jsq4qcySHHErCufy1AJZZIYZZaGaYvKJUp0/s1600/Untitled-1.png"
+          alt="Image 1"
+          className="image"
+        />
+      </div>
+  <h2 className="text-xl font-semibold mb-4">1. About download video youtube thumbnail:</h2>
   <p className="paragraph">
     Are you looking for a convenient way to download YouTube thumbnails quickly and effortlessly? Our YouTube Thumbnail Downloader, known as YouThumbnail, offers a simple, online solution. No need to install any applications, and it's completely free for all users. Discover how easy it is to access eye-catching YouTube thumbnails in various resolutions.
   </p>
@@ -185,6 +201,15 @@ const Index = () => {
   <p className="paragraph">
     If you seek all nine thumbnail sizes for a video, you'll first need to understand what a video ID is. The YouTube video ID is a unique identifier found at the end of a video URL, like the examples below:
   </p>
+  <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dy6Hj0Kk-CA"
+        title="YouTube Video 1"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
   <p className="paragraph">
     https://www.youtube.com/watch?v=dy6Hj0Kk-CA,<br></br> https://youtu.be/dy6Hj0Kk-CA
   </p>
