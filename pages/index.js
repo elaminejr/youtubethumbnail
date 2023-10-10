@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CookieConsent from "react-cookie-consent";
-
+import { Analytics } from '@vercel/analytics/react';
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
